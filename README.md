@@ -18,3 +18,15 @@
 - Error Handling
 - HTTPs
 - Tree Shaking - remove unused code
+
+# Babel 
+
+- JSX to HTMl
+- Transpiler
+
+# JSX
+
+# React Components
+
+- Class based Components - old way
+- Function based component - latest way
