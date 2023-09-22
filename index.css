@@ -1,3 +1,98 @@
-#heading{
-    color: red;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+#header {
+  box-shadow: 0 0 10px rgb(94, 87, 87);
+}
+#header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
+.logo {
+  width: 120px;
+}
+.logo > img {
+  width: 100%;
+}
+
+.nav-items > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.nav-items > ul > li {
+  list-style: none;
+  font-size: 18px;
+}
+
+.resturant {
+  margin-top: 40px;
+}
+.res-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.card-item {
+  padding: 14px;
+  border-radius: 20px;
+  transition: 0.3s all;
+}
+.card-item:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 20px 2px rgba(197, 187, 187, 0.644);
+}
+.food-img {
+  width: 350px;
+  height: 230px;
+}
+.food-img > img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.food-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+.dish-name-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.time {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.filter-btn{
+  margin: 20px 0;
+  display: flex;
+  justify-content: flex-start;
+}
+.filter-btn > .btn{
+  padding: 8px 12px;
+  font-size: 14px;
+  background-color: transparent;
+  border-radius: 10px;
+}
+.filter-btn :hover{
+  cursor: pointer;
 }

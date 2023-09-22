@@ -33,3 +33,8 @@
 
 # Config Driven UI
 
+# React Hooks
+ -useState()
+  -React Fiber -Reconciliation
+  -Virtual DOM
+  -Diff Algrorithm
