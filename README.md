@@ -35,6 +35,15 @@
 
 # React Hooks
  -useState()
-  -React Fiber -Reconciliation
-  -Virtual DOM
-  -Diff Algrorithm
+   -React Fiber -Reconciliation
+   -Virtual DOM
+   -Diff Algrorithm
+
+# useEffect()   
+
+# Fetching Live data
+ -Filter resturant
+ -Search resturant
+ -Login/Logout
+ -input box 
+ -Shimmer UI
