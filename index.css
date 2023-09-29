@@ -6,6 +6,7 @@
 }
 #header {
   box-shadow: 0 0 10px rgb(94, 87, 87);
+  margin-bottom: 20px;
 }
 #header .wrapper {
   display: flex;
@@ -23,14 +24,15 @@
 }
 .logo > img {
   width: 100%;
-  transition: .3s all;
-  transform: scale(.9);
+  transition: 0.3s all;
+  transform: scale(0.9);
 }
-.logo > img:hover{
+.logo > img:hover {
   cursor: pointer;
   transform: scale(1);
 }
-input,button{
+input,
+button {
   border: 2px solid #fc8019;
   background-color: rgba(245, 239, 239, 0.76);
   cursor: pointer;
@@ -46,6 +48,10 @@ input,button{
   list-style: none;
   font-size: 18px;
 }
+.nav-items > ul > li > a {
+  text-decoration: none;
+  color: black;
+}
 
 .resturant {
   margin-top: 40px;
@@ -54,6 +60,10 @@ input,button{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+}
+.res-card a{
+  color: black;
+  text-decoration: none;
 }
 .card-item {
   padding: 14px;
@@ -94,59 +104,214 @@ input,button{
   width: 100%;
 }
 
-.filter-btn{
+.filter-btn {
   margin: 20px 0;
   display: flex;
   justify-content: flex-start;
 }
-.filter-btn > .btn{
+.filter-btn > .btn {
   padding: 8px 12px;
   font-size: 14px;
   border-radius: 10px;
 }
 /* SHimmer */
 
-.shimmer-wrapper{
+.shimmer-wrapper {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   margin-top: 100px;
 }
-.image-shade{
+.image-shade {
   width: 350px;
   height: 230px;
   background-color: #dbd3d3;
   border-radius: 20px;
 }
-.shade-card{
+.shade-card {
   width: 378px;
   height: 337px;
 }
-.shade-card .text-shade{
+.shade-card .text-shade {
   margin-top: 10px;
   background-color: #dbd3d3;
   width: 350px;
   height: 22px;
   border-radius: 10px;
 }
-.btn-box .login-btn{
+.btn-box .login-btn {
   padding: 8px 12px;
   border-radius: 6px;
-  width: 68.80px;
+  width: 68.8px;
 }
-.shorting-wrap{
+.shorting-wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.search-box .search{
+.search-box .search {
   padding: 8px 12px;
   border-radius: 10px;
 }
-.search-box .search-btn{
+.search-box .search-btn {
   padding: 8px 12px;
   border-radius: 10px;
   margin-left: 20px;
   border: 2px solid #fc8019;
+}
+/* resturant menu  */
+.sm-container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.res-menu-wrap {
+  padding: 20px;
+}
+.res-menu-wrap .wrap .res-info {
+  padding: 16px 0 18px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 2px dotted grey;
+}
+.res-menu-wrap .wrap .res-info .right-sec > p {
+  padding-bottom: 4px;
+}
+.res-menu-wrap .wrap .res-info .right-sec .name {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.res-menu-wrap .wrap .res-info .right-sec .cuisines,
+.add-info {
+  font-size: 14px;
+}
+
+/* .res-menu-wrap .wrap .res-info .right-sec .order-timing {
+  margin-top: 30px;
+}
+.res-menu-wrap .wrap .res-info .right-sec .order-timing .box {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+} */
+/* .res-menu-wrap .wrap .res-info .right-sec .order-timing .box .kilo-meters {
+  padding-right: 6px;
+  border-right: 1px solid grey;
+} */
+.res-menu-wrap .wrap .res-info .left-sec .box {
+  border: 1px solid grey;
+  padding: 2px 4px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+.left-sec .box p {
+  padding: 8px 6px;
+}
+.left-sec .box > .rating {
+  border-bottom: 1px solid grey;
+}
+.left-sec .box > .rating i {
+  padding-right: 6px;
+  color: green;
+}
+.left-sec .box .out-of {
+  text-align: center;
+}
+.discount-box .details {
+  padding: 20px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+}
+.discount-box .details p {
+  font-weight: bold;
+}
+
+.discount-card {
+  margin-top: 20px;
+  padding: 10px 0;
+  display: flex;
+  gap: 10px;
+}
+.discount-card .item {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  border: 1px solid grey;
+  border-radius: 8px;
+  padding: 6px;
+  white-space: nowrap;
+}
+.discount-card .item .tag {
+  color: rgb(228, 109, 71);
+  font-weight: 600;
+  font-size: 10px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  border-left: 1px solid grey;
+  padding-left: 4px;
+}
+.offer-code-box {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 4px;
+}
+.offer-code-box,
+.rupees {
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+}
+.offer-code-box,
+.code {
+  color: grey;
+  font-size: 12px;
+  letter-spacing: -1px;
+}
+/* menu items styling */
+
+.menu-list-box {
+  margin-top: 20px;
+}
+
+.menu-list-box .title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.cards-wrap .card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  border-bottom: 1px solid grey;
+}
+.card .item-info .name {
+  font-size: 17px;
+  font-weight: 600;
+}
+.card .item-info .rate {
+  font-size: 14px;
+  font-weight: 600;
+}
+.card .item-info .food-info {
+  font-size: 14px;
+  color: grey;
+}
+.card .item-img {
+  width: 118px;
+  height: 96px;
+}
+.card .item-img img {
+  min-width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
 }

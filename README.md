@@ -1,6 +1,6 @@
 # Namaste React 🚀
 
-# Parcel 
+# Parcel
 
 - Dev Build
 - Local Server
@@ -19,7 +19,7 @@
 - HTTPs
 - Tree Shaking - remove unused code
 
-# Babel 
+# Babel
 
 - JSX to HTMl
 - Transpiler
@@ -34,16 +34,18 @@
 # Config Driven UI
 
 # React Hooks
- -useState()
-   -React Fiber -Reconciliation
-   -Virtual DOM
-   -Diff Algrorithm
 
-# useEffect()   
+- useState()
+- React Fiber -Reconciliation
+- Virtual DOM
+- Diff Algrorithm
+
+# useEffect()
 
 # Fetching Live data
- -Filter resturant
- -Search resturant
- -Login/Logout
- -input box 
- -Shimmer UI
+
+- Filter resturant
+- Search resturant
+- Login/Logout
+- input box
+- Shimmer UI

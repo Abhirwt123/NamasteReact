@@ -1,7 +1,7 @@
 import ResturanentCard from "./ResturentCrad";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
-
+import { Link } from "react-router-dom";
 const Body = () => {
   const [listOfRestaurant, setListOfRestaurant] = useState([]);
   const [filteredRestaurant, setFilteredRestaurant] = useState([]);
@@ -10,6 +10,7 @@ const Body = () => {
   useEffect(() => {
     fetchData();
   }, []);
+  // fetching data from swiggy api
   const fetchData = async () => {
     const data = await fetch(
       "https://www.swiggy.com/dapi/restaurants/list/v5?lat=30.7333148&lng=76.7794179&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
@@ -24,8 +25,7 @@ const Body = () => {
     );
   };
 
-  // conditional rendering
-  // using ternary operater
+  // conditional rendering using ternary operater
   return listOfRestaurant.length === 0 ? (
     <div className="container">
       <div className="shimmer-wrapper">
@@ -98,10 +98,11 @@ const Body = () => {
           <div className="res-card">
             {filteredRestaurant.map((restaurant) => {
               return (
-                <ResturanentCard
+                <Link
                   key={restaurant.info.id}
-                  resData={restaurant}
-                />
+                  to={"/restaurantMenu/" + restaurant.info.id}>
+                  <ResturanentCard resData={restaurant} />
+                </Link>
               );
             })}
           </div>
