@@ -315,3 +315,8 @@ button {
   border-radius: 10px;
   object-fit: cover;
 }
+.user{
+  padding: 20px;
+  border: 2px solid violet;
+  width: 300px;
+}

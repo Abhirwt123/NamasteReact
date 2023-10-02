@@ -18,7 +18,7 @@ const Body = () => {
     const json = await data.json();
     // option chaining
     setListOfRestaurant(
-      json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants 
     );
     setFilteredRestaurant(
       json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
@@ -26,7 +26,7 @@ const Body = () => {
   };
 
   // conditional rendering using ternary operater
-  return listOfRestaurant.length === 0 ? (
+  return listOfRestaurant.length === 0  ? (
     <div className="container">
       <div className="shimmer-wrapper">
         <Shimmer />
@@ -100,7 +100,8 @@ const Body = () => {
               return (
                 <Link
                   key={restaurant.info.id}
-                  to={"/restaurantMenu/" + restaurant.info.id}>
+                  to={"/restaurantMenu/" + restaurant.info.id}
+                >
                   <ResturanentCard resData={restaurant} />
                 </Link>
               );
